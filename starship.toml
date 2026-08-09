@@ -1,0 +1,32 @@
+scan_timeout = 500
+
+command_timeout = 1000
+
+format = """
+$directory$git_branch$git_status$python$nodejs$java$fill$time$line_break$character"""
+
+[fill]
+symbol = " "
+
+[directory]
+truncation_length = 10
+truncate_to_repo = false
+
+[git_branch]
+symbol = '🌱 '
+
+[git_status]
+conflicted = "💥"
+ahead = "🏎💨"
+behind = "🥲"
+diverged = "😵"
+untracked = "🌚"
+stashed = "📦"
+modified = "📝"
+staged = '🔦'
+renamed = "🏷"
+deleted = "🗑"
+
+[character]
+success_symbol = "[❯](bold green) "
+error_symbol = "[❯](bold red) "%
