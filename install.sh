@@ -28,4 +28,6 @@ link_file "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 
 if command -v mise >/dev/null 2>&1; then
     mise install
+    mise bootstrap
 fi
+
