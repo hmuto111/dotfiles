@@ -2,8 +2,8 @@
 node = "latest"
 pnpm = "latest"
 
-[bootstrap.packages]
-apt = ["zsh"]
+# [bootstrap.packages]
+# apt = ["zsh"]
 
 [bootstrap.user]
 login_shell = "/usr/bin/zsh"
