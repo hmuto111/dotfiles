@@ -64,6 +64,16 @@ config.keys = {
     mods = 'CTRL|SHIFT',
     action = wezterm.action.ShowLauncher,
   },
+  {
+    key = 'LeftArrow',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.MoveTabRelative(-1),
+  },
+  {
+    key = 'RightArrow',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.MoveTabRelative(1),
+  },
 }
 
 return config
