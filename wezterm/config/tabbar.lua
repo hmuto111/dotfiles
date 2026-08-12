@@ -22,7 +22,7 @@ wezterm.on("format-tab-title", function(tab, _, _, _, _, _)
     local edge_foreground = background
 
     -- タブのアイコン
-    local tab_info = tabicon(tab.active_pane.foreground_process_name)
+    local tab_info = tabicon(tab.active_pane.foreground_process_name, tab.active_pane.title)
     local icon = tab.active_pane.is_zoomed and wezterm.nerdfonts.md_magnify_plus_outline or tab_info.icon
     local icon_color = tab_info.icon_color
     local title = tab_info.title
