@@ -3,7 +3,7 @@ node = "latest"
 pnpm = "latest"
 
 [bootstrap.packages]
-apt = ["zsh"]
+apt = "zsh"
 
 [bootstrap.user]
 login_shell = "/usr/bin/zsh"

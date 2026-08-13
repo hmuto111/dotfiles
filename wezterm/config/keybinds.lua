@@ -1,5 +1,5 @@
 local wezterm = require 'wezterm'
-local config = wezterm.config_builder()
+local config = {}
 
 config.selection_word_boundary = ' \t\n{}[]()"\'`:'
 

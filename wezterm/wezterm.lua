@@ -1,5 +1,5 @@
 local wezterm = require("wezterm")
-local config = wezterm.config_builder()
+local config = {}
 
 if wezterm.target_triple:find("windows") then
     config.default_prog = { "wsl.exe", "~" }
