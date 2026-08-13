@@ -23,6 +23,7 @@ link_file() {
 link_file "$DOTFILES_DIR/mise" "$HOME/.config/mise"
 link_file "$DOTFILES_DIR/wezterm" "$HOME/.config/wezterm"
 link_file "$DOTFILES_DIR/nvim" "$HOME/.config/nvim"
+link_file "$DOTFILES_DIR/jj" "$HOME/.config/jj"
 link_file "$DOTFILES_DIR/starship.toml" "$HOME/.config/starship.toml"
 link_file "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 
