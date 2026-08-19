@@ -1,3 +1,7 @@
 [fix.tools.biome]
 command = [ "pnpm", "exec", "biome", "check", "--write", "--stdin-file-path", "$path" ]
 patterns = ["glob:'**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,html,css,json,jsonc,yaml,yml,md,mdx}'"]
+
+[user]
+name = "hmuto111"
+email = "182398097+hmuto111@users.noreply.github.com"

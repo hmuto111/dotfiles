@@ -27,6 +27,10 @@ link_file "$DOTFILES_DIR/jj" "$HOME/.config/jj"
 link_file "$DOTFILES_DIR/starship.toml" "$HOME/.config/starship.toml"
 link_file "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 
+# Antigravity CLI
+mkdir -p "$HOME/.gemini/antigravity-cli"
+link_file "$DOTFILES_DIR/agy/settings.json" "$HOME/.gemini/antigravity-cli/settings.json"
+
 if command -v mise >/dev/null 2>&1; then
     mise install
     mise bootstrap
