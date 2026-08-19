@@ -91,6 +91,11 @@ return {
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
       },
+      i = {
+        -- インサートモードを抜けるキーバインド
+        ["jj"] = { "<Esc>", desc = "Escape to Normal mode" },
+        ["jk"] = { "<Esc>", desc = "Escape to Normal mode" },
+      },
     },
   },
 }
