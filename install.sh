@@ -27,9 +27,11 @@ link_file "$DOTFILES_DIR/jj" "$HOME/.config/jj"
 link_file "$DOTFILES_DIR/starship.toml" "$HOME/.config/starship.toml"
 link_file "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 
-# Antigravity CLI
+# Antigravity CLI (初回のみコピー配置してローカル変更と分離)
 mkdir -p "$HOME/.gemini/antigravity-cli"
-link_file "$DOTFILES_DIR/agy/settings.json" "$HOME/.gemini/antigravity-cli/settings.json"
+if [ ! -f "$HOME/.gemini/antigravity-cli/settings.json" ]; then
+    cp "$DOTFILES_DIR/agy/settings.json" "$HOME/.gemini/antigravity-cli/settings.json"
+fi
 
 if command -v mise >/dev/null 2>&1; then
     mise install
